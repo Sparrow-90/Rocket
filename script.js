@@ -14,7 +14,7 @@ const changeState = function(state){
          if(countDownNumber <= 0){
             changeState(3)
          }   
-        }, 1000)
+        }, 500)
     }
     else if(state == 3){
        const success = setTimeout(function(){

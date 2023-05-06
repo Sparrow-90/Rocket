@@ -22,12 +22,12 @@
     bottom: 20px;
     width: 20px;
     height: 100px;
-    background-color: cadetblue;
+    background-color: rgb(64, 99, 100);
     transition: bottom 5s;
  }
 
  .ground{
-    background-color: green;
+    background-color: rgb(95, 172, 95);
     position: absolute;
     left: 0;
     bottom: 0;
