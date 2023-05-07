@@ -1,15 +1,27 @@
  .left{
     position: fixed;
-    background-color: bisque;
     width: 50%;
     height: 100%;
     top: 0;
     left: 0;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .left a{
+   text-decoration: none;
+   font-size: 50px;
+   border: 4px solid black;
+   padding: 20px 30px;
+   color: black;
+   margin-left: 140px;
+ }
+ .left h1{
+   margin-left: 120px;
  }
 
  .right{
     position: fixed;
-    background-color:aliceblue;
+    /* background-color:aliceblue; */
     width: 50%;
     height: 100%;
     top: 0;
@@ -18,23 +30,69 @@
 
  .rocket{
     position: absolute;
+    background: url(/img/rocket1.PNG) no-repeat center center;
+    background-size: cover;
     left: 50%;
-    bottom: 20px;
-    width: 20px;
-    height: 100px;
-    background-color: rgb(64, 99, 100);
+    bottom: -80px;
+    width: 604px;
+    height: 604px;
+    margin-left: -191.5px;
     transition: bottom 5s;
  }
 
+main.main-state2 .rocket{
+   background: url(/img/rocket-start.GIF) no-repeat center center;
+   background-size: cover;
+   /* width: 604px;
+    height: 604px; */
+}
+main.main-state3 .rocket{
+   background: url(/img/fly-rocket.GIF) no-repeat center center;
+   background-size: cover;
+}
+main.main-state4 .rocket{
+
+}
+main.main-state5 .rocket{
+   background: url(/img/boom.PNG) no-repeat center center;
+   background-size: cover;
+}
+   
  .ground{
-    background-color: rgb(95, 172, 95);
     position: absolute;
     left: 0;
     bottom: 0;
     width:100%;
     height: 20px;
  }
+ .nervous{
+   position: absolute;
+   top: 100px;
+   left: -100px;
+   background: url(/img/nervous.PNG) no-repeat center center;
+   background-size: cover;
+   width: 423px;
+   height: 100px;
+   display: none;
+ }
+.moon{
+   position: absolute;
+   bottom: 420px;
+   left: 50%;
+   background: url(/img/moon.PNG) no-repeat center center;
+   background-size: cover;
+   width: 323px;
+   height: 200px;
+   margin-left: -180px;
+   display: none;
+}
 
+.moon.show{
+   display: block;
+}
+.nervous.show{
+   display: block;
+}
  main.main-state1 .rocket{
     transition: none ;
  }

@@ -11,10 +11,23 @@ const changeState = function(state){
         timer = setInterval(function(){
             countDownNumber--
             document.getElementById('countdown').innerHTML = countDownNumber;
+        
+         if(countDownNumber > 3 && countDownNumber <= 5){
+            document.getElementById('nervous').className = 'nervous show'
+         }
+         else{
+            document.getElementById('nervous').className = 'nervous'
+         }
+         if(countDownNumber <= 3 && countDownNumber > 0){
+            document.getElementById('moon').className = 'moon show'
+         }
+         else{
+            document.getElementById('moon').className = 'moon'
+         }
          if(countDownNumber <= 0){
             changeState(3)
          }   
-        }, 500)
+        }, 1000)
     }
     else if(state == 3){
        const success = setTimeout(function(){
