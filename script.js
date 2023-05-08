@@ -18,7 +18,7 @@ const changeState = function(state){
          else{
             document.getElementById('nervous').className = 'nervous'
          }
-         if(countDownNumber <= 3 && countDownNumber > 0){
+         if(countDownNumber <= 1 && countDownNumber > 0){
             document.getElementById('moon').className = 'moon show'
          }
          else{
@@ -27,7 +27,7 @@ const changeState = function(state){
          if(countDownNumber <= 0){
             changeState(3)
          }   
-        }, 1000)
+        }, 500)
     }
     else if(state == 3){
        const success = setTimeout(function(){
