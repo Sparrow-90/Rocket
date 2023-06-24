@@ -1,5 +1,5 @@
-# Rocket-
- Launch the rocket and see if it reaches the stars or maybe it will explode on the way.
+# Rocket
+ <h2>Launch the rocket and see if it reaches the stars or maybe it will explode on the way.</h2>
 
 ![Zrzut ekranu (50)](https://github.com/Sparrow-90/Rocket-/assets/124800004/27873821-2021-4fb4-b2b1-9f4a29b26c7a)
 
